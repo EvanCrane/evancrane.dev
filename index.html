@@ -9,29 +9,56 @@
     <meta name="description" content="Evan Crane's material CV / Resume / Portfolio">
     <meta name="keywords" content="global, template, html, Evan, Crane">
     <meta name="author" content="Evan Crane">
+    <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <a name="top"></a>
-    <header>
-        <nav>
-            <a id="nav-about" href="#about">About</a>
-            <a id="nav-skills" href="#skills">Skills</a>
-            <a id="nav-contact" href="#contact">Contact</a>
-        </nav>
-    </header>
+    <div class="bg-content-parallax">
+        <header>
+            <nav>
+                <div class="nav-links">
+                    <a class="nav-link" id="nav-about" href="#about">About</a>
+                    <a class="nav-link" id="nav-skills" href="#skills">Skills</a>
+                    <a class="nav-link" id="nav-contact" href="#contact">Contact</a>
+                </div>
+            </nav>
+            <div class="greeting">
+                <div class="greeting-content">
+                    <h1>Hello, I'm <b>Evan F Crane</b></h1>
+                    <h2>Full Stack Developer</h2>
+                    <h2>I build...<h2>
+                </div>
+            </div>
+        </header>
+    </div>
     <div class="body-sections">
         <!--About-->
-        <section>
-
+        <section id="about" class="about">
+            <h1>About Me</h1>
+            <p id="line">_____</p>
         </section>
         <!--Skills-->
-        <section>
-
+        <section id="skills" class="skills">
+            <h1>Skills and Experiences</h1>
+            <p id="line">_____</p>
         </section>
         <!--Contact-->
-        <section>
-
+        <section id="contact" class="contact">
+            <h1> Contact me</h1>
+            <p id="line">_____</p>
+            <div>
+                <a class="link-email" href="mailto:evanf.crane@gmail.com">
+                    <i class="fas fa-envelope fa-5x"></i>
+                </a>
+                <a class="link-linkedin" href="https://www.linkedin.com/in/evan-crane/">
+                    <i class="fab fa-linkedin fa-5x"></i>
+                </a>
+                <a class="link-github" href="https://github.com/EvanCrane/">
+                    <i class="fab fa-github fa-5x"></i>
+                </a>
+            </div>
         </section>
     </div>
     <!--Footer with anchor-->
@@ -39,13 +66,12 @@
         <a href="#top" style="padding-bottom: 1em;">
             <div id="scroll-up"></div>
         </a>
-        <h1>&#169; 2018 Evan Crane</h1>
+        <h3>&#169; 2018 Evan F Crane</h3>
     </footer>
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB"
-        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
     <script>
-        var scroll = new SmoothScroll('a[href*="#"]');
+    var scroll = new SmoothScroll('a[href*="#"]');
     </script>
     <script src="assets/js/site.js"></script>
 </body>

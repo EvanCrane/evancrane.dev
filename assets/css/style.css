@@ -1,31 +1,42 @@
 /* style.css */
-@font-face {
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 400;
-    src: url("font/quicksand.eot");
-    src: local("Quicksand Regular"), local("Quicksand-Regular"), url("font/quicksand.eot?#iefix") format("embedded-opentype"), url("font/quicksand.woff2") format("woff2"), url("font/quicksand.woff") format("woff"), url("font/quicksand.ttf") format("truetype"), url("font/quicksand.svg#Quicksand") format("svg");
-}
-
-@font-face {
-    font-family: 'fontello';
-    src: url("font/fontello.eot?29715915");
-    src: url("font/fontello.eot?29715915#iefix") format("embedded-opentype"), url("font/fontello.woff?29715915") format("woff"), url("font/fontello.ttf?29715915") format("truetype"), url("font/fontello.svg?29715915#fontello") format("svg");
-    font-weight: normal;
-    font-style: normal;
-}
-
-body {
+a,
+body,
+div,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hr,
+html,
+img,
+input,
+label,
+li,
+main,
+nav,
+ol,
+p,
+section,
+span,
+svg,
+ul {
     margin: 0;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
-    color: #5a5959;
-    background-color: #F5F5F5;
-    font-size: 18
+    padding: 0;
+    border: none;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
 }
 
-* {
-    box-sizing: border-box;
+*,
+:after,
+:before {
+    box-sizing: border-box
 }
 
 *::selection {
@@ -36,4 +47,185 @@ body {
 *::-moz-selection {
     background: #97e7ff;
     color: #fff;
+}
+
+img {
+    max-width: 100%
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+input {
+    border-radius: 0
+}
+
+::-webkit-input-placeholder {
+    opacity: 1
+}
+
+:-ms-input-placeholder {
+    opacity: 1
+}
+
+::placeholder {
+    opacity: 1
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
+    outline: none
+}
+
+html {
+    font-size: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #5d5d5d;
+    background-color: #F5F5F5;
+    line-height: 1.8;
+}
+
+/* Header */
+header {
+    top: 0px;
+    opacity: 1;
+    min-height: 60vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background: rgba(31, 56, 80, 0.8);
+
+}
+
+.bg-content-parallax {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-origin: padding-box;
+    background-clip: border-box;
+    opacity: 1;
+    background-image: url("https://picjumbo.com/wp-content/uploads/designer-wooden-workspace_free_stock_photos_picjumbo_HNCK5654-2210x1474.jpg");
+    top: 0px;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    padding: 2vh;
+    text-align: center;
+    top: 0;
+    background: whitesmoke;
+    box-shadow: 0px 0px 0.75em #111;
+}
+
+.nav-links {
+    display: inline-block;
+    margin: 0 15px;
+    vertical-align: middle;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.nav-links>a {
+    margin: 0 9px;
+}
+
+/* Greeting */
+.greeting {
+    width: 100%;
+    padding: 10vh 5vh;
+    text-align: center;
+    font-weight: 400;
+    color: whitesmoke;
+}
+
+.greeting-content {}
+
+/* Sections */
+.body-sections {
+    background-color: #DEDEDE;
+}
+
+section {
+    padding: 2vh 2vh;
+    text-align: center;
+}
+
+/* About */
+.about {}
+
+/* Contact */
+.contact {}
+
+/* Footer */
+#top {
+    display: block;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+#scroll-up {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: auto;
+    transform: rotate(45deg);
+    display: block;
+    border-top: 2px solid whitesmoke;
+    border-left: 2px solid whitesmoke;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+footer {
+    bottom: 0;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 3%;
+    color: #999;
+    text-align: center;
+    background: #2d2d2d;
+    margin-top: 1em;
+}
+
+footer>a {
+    display: block;
+    padding-top: 2em;
+}
+
+footer>h1 {
+    letter-spacing: 3px;
 }
