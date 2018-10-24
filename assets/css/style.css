@@ -49,6 +49,10 @@ ul {
     color: #fff;
 }
 
+.hidden {
+    opacity: 0;
+}
+
 img {
     max-width: 100%
 }
@@ -172,7 +176,10 @@ nav {
     color: whitesmoke;
 }
 
-.greeting-content {}
+.console-icon {
+    display: inline-block;
+    margin-left: 1px;
+}
 
 /* Sections */
 .body-sections {
