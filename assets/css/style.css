@@ -203,12 +203,86 @@ section {
 /* About */
 .about {}
 
+/* Skills */
+.skills {}
+
+.skill-bars {
+    display: inline-block;
+    width: 42%;
+    padding-right: 5%;
+    text-align: left;
+    font-size: 1em;
+}
+
+.progress-box {
+    height: .7em;
+    margin: 2% 0;
+    width: 100%;
+    border: .05em solid #2D2D2D;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.progress-wrapper {
+    width: 0%;
+}
+
+.progress-wrapper > div {
+    height: .7em;
+    background: #2D2D2D;
+    display: block;
+    border-radius: 50px;
+}
+
+.visible-bar {
+    width: 100%;
+    -webkit-transition: width 1.5s ease-in-out;
+    transition: width 1.5s ease-in-out;
+}
+
+.progress {
+    
+}
+
+
+div#skill-CSharp {
+    width: 85%;
+}
+
+div#skill-Java {
+    width: 85%;
+}
+
+div#skill-HTML {
+    width: 85%;
+}
+
+div#skill-CSS {
+    width: 60%;
+}
+
+div#skill-JavaScript {
+    width: 60%;
+}
+
+div#skill-SQL {
+    width: 75%;
+}
+
+div#skill-Python {
+    width: 50%;
+}
+
+div#skill-Haskell {
+    width: 35%;
+}
+
 /* Contact */
 .contact {
     padding-bottom: 5vh;
 }
 
-.contact-icons > a {
+.contact-icons>a {
     padding: 1vh 1.5vh;
 }
 

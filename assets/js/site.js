@@ -43,3 +43,16 @@ $(document).ready(function changeBuildText() {
         }
     }, 400)
 })
+
+$(window).scroll(function(event) {
+	var bars = $('div.progress-wrapper');
+	bars.each(function(i, el) {
+		var el = $(el);
+		if (el.visible(true)) {
+			el.addClass('visible-bar');
+		}
+		else  {
+			el.removeClass('visible-bar')
+		}
+	});
+});
