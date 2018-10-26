@@ -17,19 +17,29 @@
     <a name="top"></a>
     <div class="bg-content-parallax">
         <header>
-            <nav>
-                <div class="nav-links">
+            <nav id="mainNav" class="mainNav">
+                <div class="navbar-brand">
+                    <h2>Evan Crane</h2>
+                </div>
+                <div id="navLinks" class="nav-links">
                     <a class="nav-link" id="nav-about" href="#about">About</a>
                     <a class="nav-link" id="nav-skills" href="#skills">Skills</a>
                     <a class="nav-link" id="nav-contact" href="#contact">Contact</a>
+                    <a href="javascript:void(0);" class="icon" onclick="navResponsive()">
+    <i class="fa fa-bars"></i>
+  </a>
                 </div>
             </nav>
             <div class="greeting">
                 <div class="greeting-content">
-                    <h1>Hello, I'm <b>Evan F Crane</b></h1>
+                    <h1>Hello, I'm <b>Evan Crane</b></h1>
                     <h2>Full Stack Developer</h2>
                     <h2>I build... <span id="build-text">stuff</span><span id="console-icon" class="console-icon">|</span></h2>
                 </div>
+            </div>
+            <div class="viewMore">
+                <h3>View More</h3>
+                <a href="#about"> <i class="fas fa-angle-double-down fa-3x"></i></a>
             </div>
         </header>
     </div>
@@ -56,7 +66,6 @@
                             <div class="progress" id="skill-CSharp"></div>
                         </div>
                     </div>
-
                     <li>HTML</li>
                     <div class="progress-box">
                         <div class="progress-wrapper">
@@ -130,7 +139,6 @@
         </a>
         <h3>&#169; 2018 Evan F Crane</h3>
     </footer>
-
     <script src="src/lib/jquery.min.js"></script>
     <script src="src/lib/visible-jquery-plugin.min.js"></script>
     <script src="src/lib/fontawesome/all.min.js"></script>

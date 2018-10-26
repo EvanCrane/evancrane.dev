@@ -53,6 +53,8 @@ ul {
     opacity: 0;
 }
 
+
+
 img {
     max-width: 100%
 }
@@ -130,9 +132,9 @@ body {
 }
 
 header {
+    min-height: 100vh;
     top: 0px;
     opacity: 1;
-    min-height: 75vh;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -145,26 +147,85 @@ header {
 
 }
 
-nav {
+.navbar-brand {
+    position: absolute;
+}
+
+.mainNav {
     position: absolute;
     width: 100%;
     padding: 2vh;
     text-align: center;
     top: 0;
-    background: whitesmoke;
+
     box-shadow: 0px 0px 0.75em #111;
+    color: #fcfcfc;
 }
 
 .nav-links {
-    display: inline-block;
-    margin: 0 15px;
     vertical-align: middle;
     font-size: 16px;
     text-transform: uppercase;
+
 }
 
-.nav-links>a {
-    margin: 0 9px;
+.nav-links a {
+    padding: 0 1em;
+
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.mainNav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .mainNav {
+        background: whitesmoke;
+        color: #5d5d5d;
+    }
+
+    .nav-links a {
+        display: none;
+    }
+
+    .nav-links a:hover {
+        color: black;
+    }
+
+    .mainNav .icon {
+        float: right;
+        display: block;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mainNav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .mainNav.responsive .nav-links {
+        position: relative;
+    }
+
+    .mainNav.responsive .nav-links a:not(:last-child) {
+        float: none;
+        display: block;
+        text-align: center;
+        padding: .75em;
+    }
+
+    .mainNav.responsive .nav-links a:first-child {
+        padding-top: 50px;
+    }
 }
 
 /* Greeting */
@@ -179,6 +240,18 @@ nav {
 .console-icon {
     display: inline-block;
     margin-left: 1px;
+}
+
+.viewMore {
+    position: absolute;
+    top: 85vh;
+    left: calc(50% - 52px);
+    text-align: center;
+    color: whitesmoke;
+}
+
+.viewMore>h3 {
+    color: whitesmoke;
 }
 
 /* Sections */
@@ -227,7 +300,7 @@ section {
     width: 0%;
 }
 
-.progress-wrapper > div {
+.progress-wrapper>div {
     height: .7em;
     background: #2D2D2D;
     display: block;
@@ -240,9 +313,7 @@ section {
     transition: width 1.5s ease-in-out;
 }
 
-.progress {
-    
-}
+.progress {}
 
 
 div#skill-CSharp {

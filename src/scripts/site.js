@@ -56,3 +56,12 @@ $(window).scroll(function(event) {
 		}
 	});
 });
+
+function navResponsive() {
+    var mainNav = $('#mainNav')
+    if (mainNav.hasClass('responsive')) {
+        mainNav.removeClass('responsive');
+    } else {
+        mainNav.addClass('responsive');
+    }
+}
