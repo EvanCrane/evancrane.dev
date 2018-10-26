@@ -257,12 +257,16 @@ header {
 /* Sections */
 .body-sections {
     background-color: gainsboro;
-    padding: 2vh 2vh;
+    padding: 2vh 2vw;
 }
 
 section {
-    padding: 10vh 7vh;
+    padding: 10vh 20%;
     text-align: center;
+}
+
+.content {
+    box-sizing: border-box;
 }
 
 .line {
@@ -274,7 +278,16 @@ section {
 }
 
 /* About */
-.about {}
+.about p {
+    padding: 1vw;
+    text-align: left;
+}
+
+.img-profile {
+    border-radius: 100%;
+    width: 150px;
+    margin: 1vh;
+}
 
 /* Skills */
 .skills {}
