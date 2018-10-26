@@ -120,14 +120,15 @@ body {
 .bg-content-parallax {
     width: 100%;
     background-color: rgba(0, 0, 0, 0);
-    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-origin: padding-box;
     background-clip: border-box;
+    background-position: top;
+    background-position: top;
+    background-image: url('../img/desk7.jpg');
     opacity: 1;
-    background-image: url("https://picjumbo.com/wp-content/uploads/designer-wooden-workspace_free_stock_photos_picjumbo_HNCK5654-2210x1474.jpg");
     top: 0px;
 }
 
@@ -143,7 +144,7 @@ header {
     -webkit-align-items: center;
     -webkit-box-align: center;
     align-items: center;
-    background: rgba(31, 56, 80, 0.8);
+    background: rgba(31, 56, 80, 0.75);
 
 }
 
@@ -226,6 +227,12 @@ header {
     .mainNav.responsive .nav-links a:first-child {
         padding-top: 50px;
     }
+
+    .mainNav.responsive .nav-links a:nth-child(2) {
+        border-top-style: solid;
+        border-bottom-style: solid;
+        border-width: 1px;
+    }
 }
 
 /* Greeting */
@@ -290,14 +297,28 @@ section {
 }
 
 /* Skills */
-.skills {}
+.skills .ul-left {
+    float: left;
+    width: 50%;
+    margin-left: -5vw;
+}
+
+.skills .ul-right {
+    float: right;
+    width: 50%;
+    margin-right: -5vw;
+}
 
 .skill-bars {
     display: inline-block;
-    width: 42%;
+    width: 100%;
     padding-right: 5%;
     text-align: left;
     font-size: 1em;
+}
+
+.skill-info {
+    margin-top: 275px;
 }
 
 .progress-box {
@@ -366,8 +387,13 @@ div#skill-Haskell {
     padding-bottom: 5vh;
 }
 
+.contact-icons {
+    padding: 5vh 0;
+    margin: 0 -10vw;
+}
+
 .contact-icons>a {
-    padding: 1vh 1.5vh;
+    padding: 1vh 1.5vw;
 }
 
 /* Footer */
