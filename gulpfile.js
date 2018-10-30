@@ -56,3 +56,16 @@ gulp.task('compress', function () {
     }))
     .pipe(gulp.dest('build/src/scripts'))
 });
+
+gulp.task('compresslib', function () {
+  gulp.src('./src/lib/*.js')
+    .pipe(minify({
+      ext: {
+        src: '-debug.js',
+        min: '.min.js'
+      },
+      exclude: ['tasks'],
+      ignoreFiles: ['.combo.js', '.min.js', '-min.js']
+    }))
+    .pipe(gulp.dest('build/src/lib'))
+});
