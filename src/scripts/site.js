@@ -51,9 +51,6 @@ $(window).scroll(function(event) {
 		if (el.visible(true)) {
 			el.addClass('visible-bar');
 		}
-		else  {
-			el.removeClass('visible-bar')
-		}
 	});
 });
 

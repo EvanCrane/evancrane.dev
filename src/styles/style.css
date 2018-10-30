@@ -321,6 +321,10 @@ section {
     margin-top: 275px;
 }
 
+.skill-info > p {
+    margin-bottom: 1.5em;
+}
+
 .progress-box {
     height: .7em;
     margin: 2% 0;
@@ -351,11 +355,11 @@ section {
 
 
 div#skill-CSharp {
-    width: 85%;
+    width: 90%;
 }
 
 div#skill-Java {
-    width: 85%;
+    width: 87%;
 }
 
 div#skill-HTML {
@@ -363,11 +367,11 @@ div#skill-HTML {
 }
 
 div#skill-CSS {
-    width: 60%;
+    width: 75%;
 }
 
 div#skill-JavaScript {
-    width: 60%;
+    width: 65%;
 }
 
 div#skill-SQL {
@@ -375,11 +379,11 @@ div#skill-SQL {
 }
 
 div#skill-Python {
-    width: 50%;
+    width: 45%;
 }
 
 div#skill-Haskell {
-    width: 35%;
+    width: 25%;
 }
 
 /* Contact */
