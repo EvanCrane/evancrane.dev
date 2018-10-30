@@ -351,9 +351,6 @@ section {
     transition: width 1.5s ease-in-out;
 }
 
-.progress {}
-
-
 div#skill-CSharp {
     width: 90%;
 }

@@ -45,7 +45,7 @@ gulp.task('minify-css', () => {
 });
 
 gulp.task('compress', function () {
-  gulp.src('./src/lib/*.js')
+  gulp.src('./src/scripts/*.js')
     .pipe(minify({
       ext: {
         src: '-debug.js',
@@ -54,5 +54,5 @@ gulp.task('compress', function () {
       exclude: ['tasks'],
       ignoreFiles: ['.combo.js', '.min.js', '-min.js']
     }))
-    .pipe(gulp.dest('build/src/lib'))
+    .pipe(gulp.dest('build/src/scripts'))
 });
