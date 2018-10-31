@@ -247,12 +247,15 @@ header {
 .console-icon {
     display: inline-block;
     margin-left: 1px;
+    font-size: x-large;
+    color: orange;
 }
 
 .viewMore {
     position: absolute;
-    top: 85vh;
-    left: calc(50% - 52px);
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     color: whitesmoke;
 }
