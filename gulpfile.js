@@ -22,7 +22,7 @@ gulp.task('htmltidy', function () {
       hideComments: true,
       indent: true
     }))
-    .pipe(gulp.dest('build/'));;
+    .pipe(gulp.dest('dist/'));;
 });
 
 gulp.task('csstidy', function () {
