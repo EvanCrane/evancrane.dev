@@ -323,8 +323,12 @@ section {
     margin-top: 275px;
 }
 
+.skill-info >h2 {
+    font-weight: 600;
+}
+
 .skill-info > p {
-    margin-bottom: 1.5em;
+    margin-bottom: 2.5em;
 }
 
 .progress-box {
