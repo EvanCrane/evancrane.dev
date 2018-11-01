@@ -125,8 +125,7 @@ body {
     background-size: cover;
     background-origin: padding-box;
     background-clip: border-box;
-    background-position: top;
-    background-position: top;
+    background-position: left;
     background-image: url('../img/desk7.jpg');
     opacity: 1;
     top: 0px;
