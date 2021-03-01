@@ -1,0 +1,132 @@
+/* Sections */
+.body-sections {
+    background-color: gainsboro;
+    padding: 2vh 2vw;
+  }
+  
+  section {
+    width: 100%;
+    padding: 10vh 20%;
+    text-align: center;
+  }
+  
+  .content {
+    box-sizing: border-box;
+  }
+  
+  .line {
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 1em auto 1em;
+    width: 7em;
+  }
+  
+  /* About */
+  .about p {
+    padding: 1vw;
+    text-align: left;
+  }
+  
+  .img-profile {
+    border-radius: 100%;
+    width: 150px;
+    margin: 1vh;
+  }
+  
+  /* Skills */
+  .skills .ul-left {
+    float: left;
+    width: 50%;
+    margin-left: -5vw;
+  }
+  
+  .skills .ul-right {
+    float: right;
+    width: 50%;
+    margin-right: -5vw;
+  }
+  
+  .skill-bars {
+    display: inline-block;
+    width: 100%;
+    padding-right: 5%;
+    text-align: left;
+    font-size: 1em;
+  }
+  
+  .skill-info {
+    margin-top: 275px;
+  }
+  
+  .skill-info>h2 {
+    font-weight: 600;
+  }
+  
+  .skill-info>p {
+    margin-bottom: 2.5em;
+  }
+  
+  .progress-box {
+    height: .7em;
+    margin: 2% 0;
+    width: 100%;
+    border: .05em solid #2D2D2D;
+    border-radius: 50px;
+    display: inline-block;
+  }
+  
+  .progress-wrapper {
+    width: 0%;
+  }
+  
+  .progress-wrapper>div {
+    height: .7em;
+    background: #2D2D2D;
+    display: block;
+    border-radius: 50px;
+  }
+  
+  .visible-bar {
+    width: 100%;
+    -webkit-transition: width 1.5s ease-in-out;
+    transition: width 1.5s ease-in-out;
+  }
+  
+  div#skill-JavaScript {
+    width: 95%;
+  }
+  
+  div#skill-CSharp {
+    width: 95%;
+  }
+  
+  div#skill-ReactAngular {
+    width: 75%;
+  }
+  
+  div#skill-HTMLCSS {
+    width: 95%;
+  }
+  
+  div#skill-Go {
+    width: 65%;
+  }
+  
+  div#skill-Python {
+    width: 45%;
+  }
+  
+  /* Contact */
+  .contact {
+    padding-bottom: 5vh;
+  }
+  
+  .contact-icons {
+    padding: 5vh 0;
+    margin: 0 -10vw;
+  }
+  
+  .contact-icons>a {
+    padding: 1vh 1.5vw;
+  }

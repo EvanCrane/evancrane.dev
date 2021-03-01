@@ -1,6 +1,11 @@
 import React, { useRef } from "react";
-function SkillsComponent(props) {
-    const skillsRef = useRef(null);
+import { useIsVisible } from 'react-is-visible'
+import './sections.css';
+
+const SkillsComponent = () => {
+    const skillsRef = useRef();
+    const isVisible = useIsVisible(skillsRef);
+    const visibleClass = isVisible ? 'progress-wrapper visible-bar' : 'progress-wrapper';
     return (
         <section ref={skillsRef} id="skills" className="skills">
             <h1>Skills and Experiences</h1>
@@ -10,19 +15,19 @@ function SkillsComponent(props) {
                 <div className="skill-bars">
                     <li>JavaScript</li>
                     <div className="progress-box">
-                        <div className="progress-wrapper">
+                        <div className={visibleClass}>
                             <div className="progress" id="skill-JavaScript"></div>
                         </div>
                     </div>
                     <li>HTML & CSS</li>
                     <div className="progress-box">
-                        <div className="progress-wrapper">
+                        <div className={visibleClass}>
                             <div className="progress" id="skill-HTMLCSS"></div>
                         </div>
                     </div>
                     <li>React & Angular</li>
                     <div className="progress-box">
-                        <div className="progress-wrapper">
+                        <div className={visibleClass}>
                             <div className="progress" id="skill-ReactAngular"></div>
                         </div>
                     </div>
@@ -32,19 +37,19 @@ function SkillsComponent(props) {
                 <div className="skill-bars">
                     <li>C#</li>
                     <div className="progress-box">
-                        <div className="progress-wrapper">
+                        <div className={visibleClass}>
                             <div className="progress" id="skill-CSharp"></div>
                         </div>
                     </div>
                     <li>Go</li>
                     <div className="progress-box">
-                        <div className="progress-wrapper">
+                        <div className={visibleClass}>
                             <div className="progress" id="skill-Go"></div>
                         </div>
                     </div>
                     <li>Python</li>
                     <div className="progress-box">
-                        <div className="progress-wrapper">
+                        <div className={visibleClass}>
                             <div className="progress" id="skill-Python"></div>
                         </div>
                     </div>

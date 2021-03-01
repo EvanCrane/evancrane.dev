@@ -25,7 +25,6 @@ header {
   -webkit-box-align: center;
   align-items: center;
   background: rgba(31, 56, 80, 0.75);
-
 }
 
 .navbar-brand {
@@ -113,4 +112,33 @@ header {
     border-bottom-style: solid;
     border-width: 1px;
   }
+}
+
+/* Greeting */
+.greeting {
+  width: 100%;
+  padding: 10vh 5vh;
+  text-align: center;
+  font-weight: 400;
+  color: whitesmoke;
+}
+
+.console-icon {
+  display: inline-block;
+  margin-left: 1px;
+  font-size: x-large;
+  color: orange;
+}
+
+.viewMore {
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: whitesmoke;
+}
+
+.viewMore>h3 {
+  color: whitesmoke;
 }
