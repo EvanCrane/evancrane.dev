@@ -1,9 +1,10 @@
 import React, { useRef } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
+import { Link as ScrollLink } from "react-scroll";
 import './header.css';
 
-function HeaderComponent(props) {
+const HeaderComponent = () => {
     return (
         <div className="bg-content-parallax">
             <header>
@@ -12,9 +13,9 @@ function HeaderComponent(props) {
                         <h2>Evan Crane</h2>
                     </div>
                     <div id="navLinks" className="nav-links">
-                        <a className="nav-link" id="nav-about">About</a>
-                        <a className="nav-link" id="nav-skills">Skills</a>
-                        <a className="nav-link" id="nav-contact">Contact</a>
+                        <ScrollLink to="about" smooth={true} offset={50} duration={500} className="nav-link" id="nav-about">About</ScrollLink>
+                        <ScrollLink to="skills" smooth={true} offset={50} duration={500} className="nav-link" id="nav-skills">Skills</ScrollLink>
+                        <ScrollLink to="contact" smooth={true} offset={50} duration={500} className="nav-link" id="nav-contact">Contact</ScrollLink>
                     </div>
                 </nav>
                 <LandingComponent />
@@ -30,7 +31,7 @@ function LandingComponent(props) {
             <Greeting />
             <div className="viewMore">
                 <h3>View More</h3>
-                <a href="#about"> <FontAwesomeIcon icon={faAngleDoubleDown} size="3x"></FontAwesomeIcon></a>
+                <ScrollLink to="about" smooth={true} offset={50} duration={500}> <FontAwesomeIcon icon={faAngleDoubleDown} size="3x"></FontAwesomeIcon></ScrollLink>
             </div>
         </section>
     );

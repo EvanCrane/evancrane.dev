@@ -67,11 +67,12 @@ footer {
   color: #999;
   text-align: center;
   background: #2d2d2d;
+  padding: 2em;
 }
 
 footer>a {
   display: block;
-  padding-top: 2em;
+  padding-bottom: 1em;
 }
 
 footer>h1 {

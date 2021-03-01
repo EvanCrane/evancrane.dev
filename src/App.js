@@ -13,6 +13,12 @@ function App() {
         <SkillsComponent />
         <ContactComponent />
       </div>
+      <footer>
+        <a href="#top">
+            <div id="scroll-up"></div>
+        </a>
+        <h3>&#169; 2021 Evan Crane</h3>
+    </footer>
     </div>
   );
 }
