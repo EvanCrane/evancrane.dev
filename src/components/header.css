@@ -124,11 +124,21 @@ header {
   color: whitesmoke;
 }
 
+@keyframes blinkIcon {
+  from, to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 .console-icon {
   display: inline-block;
   margin-left: 1px;
   font-size: x-large;
   color: orange;
+  animation: blinkIcon 1s step-end infinite;
 }
 
 .viewMore {

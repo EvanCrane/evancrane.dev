@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
 import { Link as ScrollLink } from "react-scroll";
 import './header.css';
+import TextTyper from './textTyper';
 
 const HeaderComponent = () => {
     return (
@@ -43,7 +44,7 @@ function Greeting(props) {
             <div className="greeting-content">
                 <h1>Hello, I'm <b>Evan Crane</b></h1>
                 <h2>Full Stack Developer</h2>
-                <h2>I build... <span id="build-text">amazing things</span><span id="console-icon" className="console-icon">|</span></h2>
+                <TextTyper />
             </div>
         </div>
     );
