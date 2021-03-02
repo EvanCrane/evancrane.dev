@@ -1,26 +1,52 @@
 {
-  "name": "evanfcrane.com",
-  "version": "0.0.1",
-  "description": "Source for portfolio website located on evanfcrane.com",
-  "main": "index.js",
+  "hopepage": "http://evancrane.github.io/evancrane.dev",
+  "name": "evancrane.dev",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.7.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-is-visible": "^1.1.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-scroll": "^1.8.1",
+    "web-vitals": "^1.1.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/EvanCrane/evanfcrane.com.git"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "author": "Evan Crane",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/EvanCrane/evanfcrane.com/issues"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
-  "homepage": "https://github.com/EvanCrane/evanfcrane.com#readme",
   "devDependencies": {
-    "gulp": "^4.0.0",
-    "gulp-clean-css": "^3.10.0",
-    "gulp-cssbeautify": "^1.0.0",
-    "gulp-htmltidy": "^0.2.4",
-    "gulp-minify": "^3.1.0"
+    "gh-pages": "^3.1.0"
   }
 }

@@ -1,0 +1,130 @@
+a,
+body,
+div,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hr,
+html,
+img,
+input,
+label,
+li,
+main,
+nav,
+ol,
+p,
+section,
+span,
+svg,
+ul {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box
+}
+
+*::selection {
+  background: #97e7ff;
+  color: #fff;
+}
+
+*::-moz-selection {
+  background: #97e7ff;
+  color: #fff;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+img {
+  max-width: 100%
+}
+
+svg:not(:root) {
+  overflow: hidden
+}
+
+input {
+  border-radius: 0
+}
+
+::-webkit-input-placeholder {
+  opacity: 1
+}
+
+:-ms-input-placeholder {
+  opacity: 1
+}
+
+::placeholder {
+  opacity: 1
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+  outline: none
+}
+
+html {
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  font-family: 'Hind', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #5d5d5d;
+  background-color: #F5F5F5;
+  line-height: 1.8;
+}
+
+/*
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*/
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
