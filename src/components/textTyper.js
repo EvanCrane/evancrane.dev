@@ -13,28 +13,27 @@ export default class TextTyper extends Component {
     }
 
     componentDidMount() {
+        // Start typing loop when component loads
         this.typingControl(true);
     }
 
     componentDidUpdate() {
-        this.typingControl(false);
+        //this.typingControl(false);
     }
 
     typingControl = async (mount) => {
-        if (this.state.doneTyping) {
-            this.beginBackspace();
-
-        } else if (mount) {
+        if (mount) {
             await this.beginTyping();
-            this.setState({ doneTyping: true });
-            setTimeout(() => { console.log('Typed word. Now waiting...') }, 1500);
+            //setTimeout(() => { console.log('Typed word. Now waiting...') }, 1500);
         }
     }
 
     beginTyping = async () => {
         if (this.state.currentWordIndex < this.state.textList.length) {
             await this.type(this.state.textList[this.state.currentWordIndex]);
-            this.setState({ currentWordIndex: this.currentWordIndex++ });
+            if (this.state.currentText.join() === this.state.textList[this.state.currentWordIndex]) {
+                this.setState({ currentWordIndex: this.currentWordIndex + 1, doneTyping: true });
+            }
         } else {
             this.setState({ currentWordIndex: 0 });
         }
@@ -45,21 +44,32 @@ export default class TextTyper extends Component {
         let charIndex = 0;
         while (charIndex < charArr.length) {
             let index = charIndex;
-            setTimeout(() => {
-                let text = [...this.state.currentText, charArr[index]];
-                this.setState({ currentText: text });
-            }, 1000);
-            charIndex++;
+            let text = [...this.state.currentText, charArr[index]];
+            this.setState({ currentText: text });
+            setDelay(index);
+            index++;
         }
+        function setDelay(i) {
+            setTimeout(function(){
+              console.log(i);
+            }, 1000);
+          }
     }
 
-    beginBackspace() {
-        console.log('start backspacing');
+    beginBackspace = async() => {
+        while (this.state.currentText.length > 0) {
+            return new Promise(resolve => {
+                setTimeout((resolve) => {
+                    let text = [...this.state.currentText.slice(0, -1)];
+                    this.setState({ currentText: text});
+                }, 1000);
+            });
+        }
     }
 
     render() {
         return (
-            <h2>I build... <span id="build-text">{this.state.currentText.toString()}</span><span id="console-icon" className="console-icon">|</span></h2>
+            <h2>I build... <span id="build-text">{this.state.currentText.join("")}</span><span id="console-icon" className="console-icon">|</span></h2>
         );
     }
 }
