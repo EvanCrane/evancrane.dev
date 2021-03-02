@@ -14,7 +14,7 @@ export default class TextTyper extends Component {
 
     componentDidMount() {
         // Start typing loop when component loads
-        this.typingControl(true);
+        //this.typingControl(true);
     }
 
     componentDidUpdate() {
@@ -24,7 +24,7 @@ export default class TextTyper extends Component {
     typingControl = async (mount) => {
         if (mount) {
             await this.beginTyping();
-            //setTimeout(() => { console.log('Typed word. Now waiting...') }, 1500);
+            console.log('Typed a word');
         }
     }
 
@@ -40,20 +40,17 @@ export default class TextTyper extends Component {
     }
 
     type = async (word) => {
-        const charArr = word.split('');
-        let charIndex = 0;
-        while (charIndex < charArr.length) {
-            let index = charIndex;
-            let text = [...this.state.currentText, charArr[index]];
-            this.setState({ currentText: text });
-            setDelay(index);
-            index++;
-        }
-        function setDelay(i) {
-            setTimeout(function(){
-              console.log(i);
-            }, 1000);
-          }
+        return new Promise((resolve) => { 
+            const charArr = word.split('');
+            let charIndex = 0;
+            while (charIndex < charArr.length) {
+                let index = charIndex;
+                let text = [...this.state.currentText, charArr[index]];
+                this.setState({ currentText: text });
+                index++;
+            }
+            resolve(console.log('Finished typing word: ' + word));
+        });
     }
 
     beginBackspace = async() => {
@@ -68,8 +65,11 @@ export default class TextTyper extends Component {
     }
 
     render() {
+        // const dynamicText = <span id="build-text">{this.state.currentText.join("")}</span>;
+        const placeHolderText = <span id="build-text">Amazing things!</span>;
+
         return (
-            <h2>I build... <span id="build-text">{this.state.currentText.join("")}</span><span id="console-icon" className="console-icon">|</span></h2>
+            <h2>I build... {placeHolderText}<span id="console-icon" className="console-icon">|</span></h2>
         );
     }
 }
